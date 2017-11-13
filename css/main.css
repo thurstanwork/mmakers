@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkblue;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+
+/*** NAV ***/
+#makerSelector {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsla(0,0%,100%,.6);
+}
+
+#makerSelector figure {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    width: 150px;
+}
+
+#makerSelector a {
+
+    margin: 5px;
+}
+
+#makerSelector img {
+    width: 120px;
+
+}
+
+#makerSelector a {
+    color: black;
+    text-decoration: none;
+}
+
+#makerSelector p {
+    margin: 0.2rem;
+    text-align: center;
+}
+
+#makerSelector p:first-child {
+    font-size: 1.2rem;
+}
+
+#makerSelector p:last-child {
+    font-size: .9rem;
+}
+
+
+/*** TEMP LAYOUT COLOURS ***/
+
+/*h heavy highlighting */
+#makerSelector {
+    background-color: hsla(0,0%,100%,.6);
+}
+
+/* Medium highlighting */
+section, #makerSelector a, #makerSelector p, figure {
+    background-color: hsla(0,0%,100%,.25);
+}
+
+/* Light highlighting */
+p {
+  background-color: hsla(0,0%,100%,.08);  
+}
+
+#intro video {
+    width: 700px;
+    height: 400px;
+}
+
+main {
+}
+
+section {
+    width: 90vw;
+}
+
+.blurb {
+    width: 30vw;
+}
