@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1400 1600" preserveAspectRatio="xMidYMid">
+    <switch>
+        <foreignObject x="200" y="200" width="1000" height="1200" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <picture>
+            <source srcset="giraffe@0.75x.jpg 300w,
+                           giraffe.png        400w,
+                           giraffe@1.5x.jpg   600w,
+                           giraffe@2x.jpg     800w,
+                           giraffe@2.5x.jpg  1000w,
+                           giraffe@3x.jpg    1200w,
+                           giraffe@3.5x.jpg  1400w,
+                           giraffe@4x.jpg    1600w,
+                           giraffe@4.5x.jpg  1800w,
+                           giraffe@5x.jpg    2000w,
+                           giraffe@5.5x.jpg  2200w,
+                           giraffe@6x.jpg    2400w,
+                           giraffe@6.5x.jpg  2600w,
+                           giraffe@7x.jpg    2800w,
+                           giraffe@7.5x.jpg  3000w,
+                           giraffe@8x.jpg    3200w,
+                           giraffe@8.5x.jpg  3400w,
+                           giraffe@9x.jpg    3600w,
+                           giraffe@9.5x.jpg  3800w,
+                           giraffe@10x.jpg   4000w"
+                    type="image/jpeg"
+                    sizes="(orientation: landscape) and
+                           (min-width: calc((7/8 * (100vh - 100px)) + 200px))
+                           calc((100vh - 100px) * 8/7 * 0.7142),
+
+                           (orientation: landscape)
+                           calc((100vw - 200px) * 0.7142),
+
+                           (min-width: calc(7/8 * (100vh - 200px)))
+                           calc((100vh - 200px) * 8/7 * 0.7142),
+
+                           71.42vw">
+
+            <img src="giraffe.jpg" alt="A giraffe."
+                 srcset="giraffe@1.5x.jpg   1.5x,
+                         giraffe@2x.jpg       2x,
+                         giraffe@2.5x.jpg   2.5x,
+                         giraffe@3x.jpg       3x,
+                         giraffe@3.5x.jpg   3.5x,
+                         giraffe@4x.jpg       4x,
+                         giraffe@4.5x.jpg   4.5x,
+                         giraffe@5x.jpg       5x"
+                 height="400" width="300">
+          </picture>
+        </foreignObject>
+
+        <image xlink:href="giraffe.png" x="200" y="200" width="1000" height="1200">
+            <title>A giraffe.</title>
+        </image>
+    </switch>
+</svg>

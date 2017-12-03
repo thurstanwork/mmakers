@@ -1,84 +1,142 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: darkblue;
-    font-family: sans-serif;
-    font-size: 18px;
-}
+        @font-face {
+            font-family: 'privateer';
+            src: url('fonts/privateer-regular.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'gotham';
+            src: url('fonts/gotham-book.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'gotham';
+            src: url('fonts/gotham-book-italic.woff') format('woff');
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'gotham';
+            src: url('fonts/gotham-bold.woff') format('woff');
+            font-weight: bold;
+        }
+
+        @font-face {
+            font-family: 'gotham';
+            src: url('fonts/gotham-book-italic.woff') format('woff');
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /*** RESETS / GLOBAL ***/
+
+        body {
+            font-family: 'gotham-book';
+            margin: 0;
+            padding: 0;
+            background-color: darkblue;
+            font-family: sans-serif;
+            font-size: 22px;
+        }
 
 
-/*** NAV ***/
-#makerSelector {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: hsla(0,0%,100%,.6);
-}
+        /*** NAV ***/
 
-#makerSelector figure {
-    display: flex;
-    flex-flow: column;
-    flex: 1;
-    width: 150px;
-}
+        #makerSelector {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: hsla(0, 0%, 100%, .6);
+        }
 
-#makerSelector a {
+        #makerSelector figure {
+            display: flex;
+            flex-flow: column;
+            flex: 1;
+            width: 150px;
+            margin: .4rem;
+        }
 
-    margin: 5px;
-}
+        #makerSelector a {
 
-#makerSelector img {
-    width: 120px;
+            margin: 5px;
+        }
 
-}
+        #makerSelector img {
+            width: 150px;
 
-#makerSelector a {
-    color: black;
-    text-decoration: none;
-}
+        }
 
-#makerSelector p {
-    margin: 0.2rem;
-    text-align: center;
-}
+        #makerSelector a {
+            color: black;
+            text-decoration: none;
+        }
 
-#makerSelector p:first-child {
-    font-size: 1.2rem;
-}
+        #makerSelector p {
+            margin: 0.2rem;
+            text-align: center;
+        }
 
-#makerSelector p:last-child {
-    font-size: .9rem;
-}
+        #makerSelector p:first-child {
+            font-size: 1.2rem;
+        }
+
+        #makerSelector p:last-child {
+            font-size: .9rem;
+        }
+
+        /*** Text Formatting ***/
+
+        h2 {
+            font-family: 'privateer';
+            font-size: 3rem;
+        }
+
+        /*** Layout ***/
+
+        main {
+            display: grid;
+
+        }
+
+        section {
+            display: grid;
+        }
 
 
-/*** TEMP LAYOUT COLOURS ***/
 
-/*h heavy highlighting */
-#makerSelector {
-    background-color: hsla(0,0%,100%,.6);
-}
+        /*** TEMP LAYOUT COLOURS ***/
 
-/* Medium highlighting */
-section, #makerSelector a, #makerSelector p, figure {
-    background-color: hsla(0,0%,100%,.25);
-}
+        /*h heavy highlighting */
 
-/* Light highlighting */
-p {
-  background-color: hsla(0,0%,100%,.08);  
-}
+        #makerSelector {
+            background-color: hsla(0, 0%, 100%, .6);
+        }
 
-#intro video {
-    width: 700px;
-    height: 400px;
-}
+        /* Medium highlighting */
 
-main {
-}
+        section,
+        #makerSelector a,
+        #makerSelector p,
+        figure {
+            background-color: hsla(0, 0%, 100%, .25);
+        }
 
-section {
-    width: 90vw;
-}
+        /* Light highlighting */
 
-.blurb {
-    width: 30vw;
-}
+        p {
+            background-color: hsla(0, 0%, 100%, .08);
+        }
+
+        #intro video {
+            width: 700px;
+            height: 400px;
+        }
+
+        main {}
+
+        section {
+            width: 90vw;
+        }
+
+        .blurb {
+            width: 30vw;
+        }
