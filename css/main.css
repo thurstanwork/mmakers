@@ -1,142 +1,555 @@
-        @font-face {
-            font-family: 'privateer';
-            src: url('fonts/privateer-regular.woff') format('woff');
-        }
+ /*** FONTS ***/
 
-        @font-face {
-            font-family: 'gotham';
-            src: url('fonts/gotham-book.woff') format('woff');
-        }
+ /*
+ @font-face {
+     font-family: 'privateer';
+     src: url('fonts/privateer-regular.woff') format('woff');
+ } */
 
-        @font-face {
-            font-family: 'gotham';
-            src: url('fonts/gotham-book-italic.woff') format('woff');
-            font-style: italic;
-        }
+ @font-face {
+     font-family: 'gotham';
+     font-display: fallback;
+     src: url('fonts/gotham-book.woff') format('woff');
+ }
 
-        @font-face {
-            font-family: 'gotham';
-            src: url('fonts/gotham-bold.woff') format('woff');
-            font-weight: bold;
-        }
+ @font-face {
+     font-family: 'gotham';
+     font-display: fallback;
+     src: url('fonts/gotham-book-italic.woff') format('woff');
+     font-style: italic;
+ }
 
-        @font-face {
-            font-family: 'gotham';
-            src: url('fonts/gotham-book-italic.woff') format('woff');
-            font-weight: bold;
-            font-style: italic;
-        }
+ @font-face {
+     font-family: 'gotham';
+     font-display: fallback;
+     src: url('fonts/gotham-bold.woff') format('woff');
+     font-weight: bold;
+ }
 
-        /*** RESETS / GLOBAL ***/
+ @font-face {
+     font-family: 'gotham';
+     font-display: fallback;
+     src: url('fonts/gotham-book-italic.woff') format('woff');
+     font-weight: bold;
+     font-style: italic;
+ }
 
-        body {
-            font-family: 'gotham-book';
-            margin: 0;
-            padding: 0;
-            background-color: darkblue;
-            font-family: sans-serif;
-            font-size: 22px;
-        }
+ /*** VIDEO / EMBEDS ***/
+
+ .embed-container {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 35px;
+     height: 0;
+     overflow: hidden;
+ }
+
+ .embed-container iframe,
+ .embed-container object,
+ .embed-container embed {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border-style: none;
+ }
+
+ /*** GLOBAL ***/
+
+ body {
+     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+     margin: 0;
+     padding: 0;
+     font-size: 20px;
+     background: #3272a2;
+ }
+
+ figure {
+     margin: 0;
+ }
+
+ section {
+     padding-left: 1rem;
+     padding-right: 1rem;
+     padding-top: 2rem;
+     padding-bottom: 1rem;
+ }
+
+ img {
+     width: 100%;
+ }
+
+ figcaption {
+     display: none;
+ }
+
+ .bodytext {
+     display: block;
+ }
+
+ /*** Text Formatting ***/
+
+ h2 {
+     font-weight: bold;
+     font-size: 2rem;
+     margin-bottom: .2rem;
+ }
+
+ h3 {
+     font-weight: normal;
+     font-size: 1.2rem;
+     margin-bottom: .3rem;
+ }
+
+ hgroup p {
+     margin-top: .2rem;
+     font-size: 1rem;
+ }
+
+ /*** NAV ***/
+
+ #makerSelector {
+     display: grid;
+     background-color: hsla(0, 0%, 100%, .6);
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     justify-items: center;
+ }
+
+ #makerSelector figure {
+     display: grid;
+     width: 180px;
+     margin: .4rem;
+ }
+
+ #makerSelector a {
+     margin: 5px;
+     align-self: center;
+     color: black;
+     text-decoration: none;
+ }
+
+ #makerSelector img {
+     width: 180px;
+ }
+
+ #makerSelector p {
+     margin: 0.2rem;
+     text-align: center;
+ }
+
+ #makerSelector p:first-child {
+     font-size: 1.2rem;
+ }
+
+ #makerSelector p:last-child {
+     font-size: .9rem;
+ }
+
+ /*** SECTION GLOBAL ***/
+
+ section:nth-child(even) {
+     background: white;
+ }
+
+ section:nth-child(odd) {
+     background-repeat: repeat;
+     background-image: url(img/background-blue.jpg);
+     color: white;
+ }
+
+ /*** SECTION SPECIFIC ***/
+
+ /*** INTRO ***/
+
+ #intro {
+     /* background: hsla(0, 100%, 80%, .4); */
+ }
+
+ #logo-slqmark {
+     max-width: 5rem;
+     margin: 1rem;
+ }
+
+ #intro .title {}
+
+ #steampunk-airship-container {
+     position: absolute;
+     overflow: hidden;
+     left: 0;
+     top: 10vh;
+     width: 100vw;
+     animation: airship-bob 4s infinite alternate;
+ }
+
+ #steampunk-airship {
+     position: relative;
+     overflow: hidden;
+     width: 15vw;
+     min-width: 100px;
+     animation: airship-travel 25s infinite linear;
+ }
+
+ #steampunk-tunley {
+     margin-top: 1rem;
+ }
+
+ #event-info p {
+     margin-top: .25rem;
+     margin-bottom: .25rem;
+ }
+
+ /*** RESOURCES ***/
+
+ table th {
+     background: hsl(0, 0%, 90%);
+     padding: .8rem .8rem .2rem .8rem;
+ }
+
+ /*** FOOTER ***/
+
+ footer {
+     margin: 0;
+     padding: 2rem;
+     background-color: hsl(0, 0%, 0%);
+ }
+
+ footer .lockedLogo {
+     margin: .5rem;
+     max-height: 5rem;
+ }
+
+ footer ol {
+     padding: 0;
+     list-style-position: inside;
+ }
+
+ footer li {
+     padding: 0;
+     margin: .2rem;
+ }
+
+ /*
+
+ dl {
+     display: inline-block;
+     margin: 0;
+ }
+
+ dd {
+     margin: 0;
+ } */
+
+ #contentOrigins {
+     color: white;
+ }
+
+ #contentOrigins p {
+     margin: 0;
+ }
+
+ #attributions h3 {
+     font-size: 1.4rem;
+     padding-top: .7rem;
+ }
+
+ #attributions h3:first-of-type {
+     padding-top: .2rem;
+     margin-top: 0rem;
+ }
+#attributions h3 + h4 {
+	 margin-top: 0.2rem;
+}
+#attributions h4 {
+	font-size: 1rem;
+    font-weight: lighter;
+    margin-top: .9rem;
+    margin-bottom: 0;
+}
+
+ #attributions p {
+     font-size: .9rem;
+     padding: .2rem 0;
+ }
+
+ #attributions b {
+     font-style: italic;
+ }
+
+ #attributions i {
+     font-style: normal;
+ }
+
+ #attributions i::before {
+     display: block;
+     content: "\A";
+ }
+
+ #attributions i::after {
+     display: block;
+     content: "\A";
+ }
 
 
-        /*** NAV ***/
+ /*** Layout ***/
 
-        #makerSelector {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: hsla(0, 0%, 100%, .6);
-        }
+ .site {
+     max-width: 50em;
+     margin: 0 auto;
+ }
 
-        #makerSelector figure {
-            display: flex;
-            flex-flow: column;
-            flex: 1;
-            width: 150px;
-            margin: .4rem;
-        }
+ @media screen and (max-width:600px) {}
 
-        #makerSelector a {
+ @media screen and (min-width:900px) {
+     main {
+         max-width: 100%;
+     }
 
-            margin: 5px;
-        }
+     .site {
+         max-width: none;
+     }
 
-        #makerSelector img {
-            width: 150px;
+     section {
+         clear: both;
+     }
 
-        }
+     .sectionContent {
+         max-width: 1400px;
+         margin: 0 auto;
+         overflow: visible
+     }
 
-        #makerSelector a {
-            color: black;
-            text-decoration: none;
-        }
+     /*** INTRO ***/
+     #intro .title {
+         width: 60%;
+         float: right;
+         padding-right: 3%;
+         margin-top: -2rem;
+     }
 
-        #makerSelector p {
-            margin: 0.2rem;
-            text-align: center;
-        }
+     #intro #event-info {
+         display: none;
+     }
 
-        #makerSelector p:first-child {
-            font-size: 1.2rem;
-        }
+     #intro .text {}
 
-        #makerSelector p:last-child {
-            font-size: .9rem;
-        }
+     #intro #steampunk-tunley {
+         width: 57%;
+         margin-left: -25%;
+         float: left;
+         margin-right: 3%;
+         margin-top: 10%;
+     }
 
-        /*** Text Formatting ***/
+     #intro #introVideo {
+         width: 60%;
+         padding-bottom: 30%;
+     }
 
-        h2 {
-            font-family: 'privateer';
-            font-size: 3rem;
-        }
+     /*** HUNTING ***/
+     #hunting .portrait {
+         width: 40%;
+         float: right;
+         margin-top: -6rem;
+     }
 
-        /*** Layout ***/
+     #hunting .bodytext {
+         column-count: 3;
+     }
 
-        main {
-            display: grid;
+     /*** TUNLEY ***/
+     #tunley .portrait {
+         width: 40%;
+         float: left;
+     }
+     #tunley .blurb,
+     #tunley .bodytext {
+         width: 60%;
+         float: right;
+     }
 
-        }
+     #tunley #interactiveGlobe {
+         width: 60%;
+         padding-bottom: 30%;
+     }
 
-        section {
-            display: grid;
-        }
+     #tunley .digitalStory {
+         clear: both;
+     }
+
+     /*** JENYNS ***/
+     #jenyns .portrait {
+         width: 35%;
+         float: right;
+         margin-top: -4em;
+     }
+
+     #jenyns .blurb {
+         width: 35%;
+         float: right;
+     }
+
+     #jenyns .bodytext {
+         clear: both;
+         column-count: 3;
+     }
+
+     #jenyns .hero {
+         width: calc(30% - 2em);
+         float: left;
+         margin: 1em;
+     }
 
 
 
-        /*** TEMP LAYOUT COLOURS ***/
+     /*** MOTH ***/
+     #moth .portrait {
+         width: 30%;
+         float: right;
+     }
 
-        /*h heavy highlighting */
+     #moth .hero {
+         float: left;
+         width: 40%;
+         margin-right: 1rem;
+         background:  white;
+         border-radius: 2px;
+     }
 
-        #makerSelector {
-            background-color: hsla(0, 0%, 100%, .6);
-        }
+     /*** BARTON ***/
+     #barton .portrait {
+         float: left;
+         width: 30%;
+     }
 
-        /* Medium highlighting */
+     #barton #factoryEtch {
+         width: 50%;
+         float: right;
+     }
 
-        section,
-        #makerSelector a,
-        #makerSelector p,
-        figure {
-            background-color: hsla(0, 0%, 100%, .25);
-        }
+     #barton .bodytext {}
 
-        /* Light highlighting */
+     /*** BRIMS ***/
+     #brims .portrait {
+         width: 30%;
+         float: right;
+     }
 
-        p {
-            background-color: hsla(0, 0%, 100%, .08);
-        }
+     #brims #boxCamera {
+         width: 40%;
+         float: left;
+     }
 
-        #intro video {
-            width: 700px;
-            height: 400px;
-        }
+     /*** CHANDRA ***/
+     #chandra .portrait {
+         width: 40%;
+         float: left;
+         margin-left: -100px;
+     }
 
-        main {}
+     #chandra #biteKit {
+         width: 40%;
+         float: right;
+     }
 
-        section {
-            width: 90vw;
-        }
+     /*** DENNING ***/
+     #denning hgroup {
+         width: 66%;
+     }
 
-        .blurb {
-            width: 30vw;
-        }
+     #denning .portrait {
+         width: 40%;
+		 float: right;
+     }
+
+     
+     #denning .blurb {
+		    float: right;
+    width: 57%;
+    padding-right: 3%;
+
+     }
+	 
+	 #denning .bodytext {
+		     width: 57%;
+    padding-right: 3%;
+	 }
+
+     #denning .stem {
+         width: 40%;
+         float: right;
+		 clear: right;
+     }
+
+     #denning .embed-container {
+         clear: both;
+     }
+
+     #denning p:first-of-type {
+         margin-top: 0;
+         /* float:  right; */
+     }
+
+     /*** DOWNLOADS ***/
+     #visit {
+         width: 50%;
+
+     }
+
+     #visit #brochure {
+         max-width: 350px;
+     }
+
+     #resources {
+         max-width: 50%;
+     }
+
+     footer {
+         clear: both;
+     }
+
+ }
+
+ /*** TEMP LAYOUT COLOURS ***/
+
+ /*h heavy highlighting */
+
+ /*
+ #makerSelector {
+     display: grid;
+     background-color: hsla(0, 0%, 100%, .6);
+ }
+
+ /* Medium highlighting */
+
+ /*
+ section, ol, dl, dt, #makerSelector a, #makerSelector p, figure {
+   background-color: hsla(0, 0%, 100%, .25);
+ }*/
+
+ /* Light highlighting */
+
+ /*
+ p {
+   background-color: hsla(0, 0%, 100%, .08);
+ }*/
+
+ /*** ANIMATIONS ***/
+
+ @keyframes airship-travel {
+     0% {
+         transform: translateX(-10vw);
+     }
+     100% {
+         transform: translateX(110vw);
+     }
+ }
+
+ @keyframes airship-bob {
+     0% {
+         transform: translateY(0);
+     }
+     100% {
+         transform: translateY(2em);
+     }
+ }

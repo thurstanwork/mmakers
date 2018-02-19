@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Untitled Document</title>
+	<style>
+		body {
+
+			margin: 0;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		}
+
+		section {
+			display: block;
+		}
+
+		@media screen and (min-width: 900px) {
+
+			.layout-standard {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 1fr 2fr;
+				grid-template-areas: "image title portraits" "image intro-text portraits";
+			}
+		}
+
+		@media screen and (min-width: 600px) {
+
+			section {
+				display: grid;
+				grid-template-columns: 1fr 2fr;
+				grid-template-areas: "title title" "intro-text portraits" "image image";
+				/* "body-text body-text";*/
+			}
+		}
+
+		div {
+			background-color: green;
+			padding: 20px;
+			border: solid 1px black;
+		}
+
+		.title {
+			grid-area: title;
+		}
+
+		.intro-text {
+			grid-area: intro-text;
+		}
+
+		.body-text {
+			display: none;
+			grid-area: body-text;
+		}
+
+		.portraits {
+			grid-area: portraits;
+		}
+
+		.image {
+			grid-area: image;
+		}
+
+		.image-square {
+			grid-area: image-square;
+		}
+
+		.image-tall {
+			grid-area: image-tall;
+		}
+
+		.image-wide {
+			grid-area: image-wide;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<section class="layout-standard">
+			<div class="title">title</div>
+			<div class="intro-text">intro-text</div>
+			<div class="body-text">body-text</div>
+			<div class="portraits">portrait</div>
+			<div class="image">image</div>
+		</section>
+
+		<p>WAYNE DENNING Wayne Denning: Indigenous Innovation and Invention, 2017 Digital story John Oxley Library, SLQ Accession 31036 RICHARD FRANK TUNLEY Portrait of Richard Frank Tunley, 1964 Photographer unknown John Oxley Library, SLQ Accession 29279/28
+			Fairy godfather of blind children, ca.1980s Unidentified source newspaper John Oxley Library, SLQ Accession 29279 Braille Maps and How To Make Them, 1945 Richard Frank Tunley John Oxley Library, SLQ Accession 29279/26 Frank Tunley Ltd pamphlet, ca.
+			1916 Frank Tunley Ltd John Oxley Library, SLQ Record no. 21133290950002061 Promotional brochure for Tunley Patent Blinds, 1916–1918 Frank Tunley Ltd John Oxley Library, SLQ Record no. 21133290950002061 Two visually impaired children playing with a
+			dolls house made by Tunley at the School for the Blind, 1950 Photographer unknown John Oxley Library, SLQ Accession 29279/10 Frank Tunley with his ‘picture gallery’ of model motor vehicles and aircraft, 1950 Photographer unknown John Oxley Library,
+			SLQ Accession 29279/15 Visually impaired woman using a Tunley-made braille map of the world, date unknown Photographer unknown John Oxley Library, SLQ Accession 29279/24 Indian girl at Ramabai Mission (Poona District, India) using a braille map of
+			India created by Frank Tunley, 1950 Photographer unknown John Oxley Library, SLQ Accession 29279/14 Tunley working on a bagatelle game for children from Brisbane’s School for the Blind, 1950 Photographer unknown John Oxley Library, SLQ Accession 29279/2
+			Young visually impaired boy examining a model train and other objects at the School for the Blind, 1950 Photographer unknown John Oxley Library, SLQ Accession 29279/19 Older visually impaired boys using Tunley’s model train and transport sets, 1950
+			Photographer unknown John Oxley Library, SLQ Accession 29279/16 Small vision-impaired boy examining a model organ in a dolls house at the School for the Blind in Brisbane, 1950 Photographer unknown John Oxley Library, SLQ Accession 29279/18 The Queensland
+			Braille Map Makers, 1949 Queensland Braille Map Makers John Oxley Library, SLQ Accession 29279/27 Braille model sail boat with moving parts, date unknown Richard Frank Tunley John Oxley Library, SLQ Accession 29279/34 ‘Between the Three Bridges’ braille
+			map of Brisbane CBD, 1962 Richard Frank Tunley John Oxley Library, SLQ Accession 29279/30 Frank Tunley creating braille maps and toys for the children of the School for the Blind at Annerley, Brisbane, 1950 D’arcy Pforr John Oxley Library, SLQ Accession
+			29279/1 Teaching By Touch in a School for Blind Children, c. 1939 Fox Movietone (Australia) 1 min : 41 secs Courtesy of Cinesound Movietone Productions and National Film & Sound Archive Brisbane Benefactor: Models Instruct Blind Children, 1948 Cinesound
+			Productions 47 secs Courtesy of Cinesound Movietone Productions and National Film & Sound Archive Remembering Mr Tunley: The Godfather of Blind Children, 2017 Digital story 6 mins : 3 secs John Oxley Library, SLQ Accession 31036 Braille map of Australia,
+			1963 Richard Frank Tunley John Oxley Library, SLQ Accession 29279/29 Model of Braille House, Annerley, date unknown Richard Frank Tunley On loan from Braille House (Queensland Braille Writing Association), Brisbane, Qld Braille globe on stand, 1947
+			Richard Frank Tunley John Oxley Library, SLQ Accession 29279/32 SARAH JENYNS Portrait of Sarah Jenyns, date unknown Lemaire Studios John Oxley Library, SLQ Accession 29406 Advertising proof for Jenyns corsets, back fastening application, ca. 1920 Marchant
+			& Co. John Oxley Library, SLQ Accession 29406/16 Advertising proof for Jenyns corsets, front fastening application, ca. 1920 Marchant & Co. John Oxley Library, SLQ Accession 29406/17 Advertising proof for Jenyns corsets, illustrating how to fasten
+			from the back, ca. 1920 Marchant & Co. John Oxley Library, SLQ Accession 29406/18 Advertising proof for Jenyns corsets, side fastening application, ca. 1920 Marchant & Co. John Oxley Library, SLQ Accession 29406/14 Jenyns Corset instructional booklet,
+			ca. 1920 Jenyns Patent Corset Pty Co. John Oxley Library, SLQ Accession 29406/25 Photograph of Jenyns’ shop front, Adelaide Street, Brisbane, 1937 W. A. Jones & Co. Commercial Photographers Courtesy of Queensland Museum Jenyns Patent Corset advertisement,
+			featuring an endorsement from Guy’s Hospital (London) doctors, ca. 1920 Jenyns Patent Corset Pty Co. John Oxley Library, SLQ Accession 29406/20 London Institute of Hygiene certificate, awarded to Sarah Jenyns, 1919 Institute of Hygiene, London John
+			Oxley Library, SLQ Accession 29406/1 Jenyns Corsetry figure chart, ca. 1920 Jenyns Patent Corset Pty Co. John Oxley Library, SLQ Accession 29406/9 Jenyns shop counter sign, date unknown Jenyns Patent Corset Pty Co. Courtesy of Queensland Museum Study
+			of a ‘matronly’ figure wearing a Jenyns corset, ca. 1920 Jenyns Patent Corset Pty Co. John Oxley Library, SLQ Accession 29406/7 Woman wearing a Jenyns patent surgical support corset, ca. 1920 Jenyns Patent Corset Pty Co. John Oxley Library, SLQ Accession
+			29406/6 Side view of a ‘matronly’ figure wearing a Jenyns corset, ca. 1920 Jenyns Patent Corset Pty Co. John Oxley Library, SLQ Accession 29406/8 Advertising proof for Jenyns Patent Corset, ca. 1920 Jenyns Patent Corset Pty Co. John Oxley Library,
+			SLQ Accession 29406/13 Advertising brochure, ca. 1920 Jenyns Patent Corset Pty Co. John Oxley Library, SLQ Accession 29406/22 Sectional view of a Jenyns corset, including a specimen of the ‘verterbrella’ steel support system, ca. 1920 Jenyns Patent
+			Corset Pty Co. John Oxley Library, SLQ Accession 29406/21 Jenyns Corsetry promotional brochure, 1939–1945 Jenyns Patent Corset Pty Co. John Oxley Library, SLQ Accession 29406/24 Jenyns Corsetry promotional poster, ca. 1930 Jenyns Patent Corset Pty
+			Co. John Oxley Library, SLQ Accession 29406/10 Sarah Jenyns, 2014 Digital story Ron, Ken and Pat Jenyns, Ray Weekes (interviewer) 8 mins : 32 secs Queensland Business Leaders Hall of Fame, SLQ Accession 29634/13 An early example of a Jenyns patented
+			corset, 1911 Jenyns Patent Corset Pty Co. Courtesy of Queensland Museum Jenyns corset, date unknown Jenyns Patent Corset Pty Co. Courtesy of Queensland Museum Jenyns shop mannequin, date unknown Jenyns Patent Corset Pty Co. Courtesy of Queensland Museum
+			PRICKLY PEAR Prickly pear growing on a Suttor River property in Central Queensland, ca. 1911 Photographer unknown John Oxley Library, SLQ Accession 84-6-5 Negative no. 45249 Abandoned property overtaken by prickly pear in the Chinchilla area, May 1928
+			J. Lunn John Oxley Library, SLQ API-101-01-0001 An insidious enemy, prickly pear at the foot of the Gogango Range, appeared in The Queenslander Pictorial, 26 February 1916, p.28 Vernon E. White John Oxley Library, SLQ Image no. 702692-19160226-0028
+			Album of prickly pear photographs, 1926–1933 J. Lunn, J. Mann, J. B. Henderson John Oxley Library, SLQ API-101 open at: One day’s collection of Cactoblastis eggs (approx.. 25,000,000) at Chinchilla, October 1929 (left) Quilling the eggs for the readiness
+			to despatch to landowners, Chinchilla, October 1929 (right) Treating the prickly pear with arsenious chloride gas, appeared in the prospectus of Cactus Estates Ltd, 1913 O. C. Roberts John Oxley Library, SLQ Record no. 21139185330002061 Two women and
+			a clump of prickly pear bushes, ca. 1940 Photographer unknown John Oxley Library, SLQ Accession GS-33 Negative no. 97173 Invasion of Australia, appeared in the Sydney Mail newspaper, 28 February 1923, p.8 Artist unknown Microfilm Collection, SLQ Call
+			no. MFS 0090 Queensland Prickly Pear Board’s research station with Officer in Charge, Dr Jean White-Haney (middle), c. 1913 Photographer unknown John Oxley Library, SLQ Accession D3-4-87 Negative no. 200496 Queensland prickly pear (Opuntia sp.), appeared
+			in Agricultural Gazette of New South Wales, vol. 25, June 1914 Margaret Flockton State Library of Queensland Record no. 21104989820002061 Opuntia monocantha haw., appeared in Agricultural Gazette of New South Wales, vol. 24, October 1913 Margaret Flockton
+			State Library of Queensland Record no. 21104989820002061 Cactoblastis cactorum moth and larvae, appeared in The Biological Campaign Against Prickly-Pear by Alan Dodd, 1940, date of illustration unknown Queensland Department of Agriculture and Stock
+			John Oxley Library, SLQ Record no. 21114937390002061 Opuntia tomentosa Salm-Dyck, the Velvety Prickly Pear, appeared in Agricultural Gazette of New South Wales, vol. 23, December 1912 Margaret Flockton State Library of Queensland Record no. 21104989820002061
+			Illustrations of pear injectors, appeared in the booklet Information about Pear Poisons and Apparatus, 1927 Prickly Pear Land Commission John Oxley Library, SLQ Record no. 21111188510002061 Flame thrower, ca. 1910–1920s Manufacturer unknown Courtesy
+			of Queensland Museum Poison injector with reservoir, ca. 1910–1920s Manufacturer unknown Courtesy of Queensland Museum EDWARD BARTON Power station for Australia’s first hydroelectric scheme at Thargomindah, Queensland, ca. 1898 Photographer unknown
+			John Oxley Library, SLQ Accession 82-12-2 Negative no. 39213 Workers moving a boiler at the Brisbane Electric Supply Company, Brisbane, ca. 1898 Photographer unknown John Oxley Library, SLQ Accession 82-12-2 Negative no. 39198 Ann Street power station
+			in Brisbane Queensland, ca. 1910 Photographer unknown John Oxley Library, SLQ Accession 82-12-2 Negative no. 39184 Electric lighting plant at Thargomindah, Queensland, appeared in The Queenslander, 25 June 1904, p.21 J. Backwood John Oxley Library,
+			SLQ Negative no. 9605 Digging the ditches for laying pipes and cables in George Street, ca. 1906 Photographer unknown John Oxley Library, SLQ Accession 82-12-2 Negative no. 39214 Staff of the City Electric Light Company, ca. 1904 Photographer unknown
+			John Oxley Library, SLQ Negative no. 202871 Barton White & Co.’s power plant, Edison Lane, Brisbane, ca. 1888 Photographer unknown John Oxley Library, SLQ Accession 29572/6 Storeroom interior on the upper floor of the Ann Street power station, ca.
+			1905 Photographer unknown John Oxley Library, SLQ Record no. 21126662350002061 Ann Street power station interior, ca. 1900 Photographer unknown John Oxley Library, SLQ Accession 29572/6 Local Electric Lighting Company, appeared on the front cover of
+			The Worker newspaper, 9 January 1897 Artist unknown John Oxley Library, SLQ Record no. 99459404712061 Selection of pages from Edward Barton’s workbook, 1890s Edward Barton John Oxley Library, SLQ Accession 29572/76 Portrait of Edward Gustavus Campbell
+			Barton, date unknown Photographer unknown John Oxley Library, SLQ Accession 29572 City Electric Light Co., Brisbane, ca. 1910 Photographer unknown John Oxley Library, SLQ Accession 85-12-2 Negative no. 39178 Workers at the Electric Light Company, Brisbane,
+			ca. 1910 Photographer unknown John Oxley Library, SLQ Accession 82-12-2 Brisbane Electricity Supply Company Ltd monthly revenue graph, 1901–1903 Edward Barton John Oxley Library, SLQ Accession OM78-92/31 Electric desk fan, ca. 1900 Barton & White,
+			Brisbane Courtesy of Queensland Museum Edison street tube, angle junction box (half), ca. 1883 Thomas Edison’s Electric Tube Company, USA Courtesy of Queensland Museum Edison street tubes, straight junction boxes (half), ca. 1883 Thomas Edison’s Electric
+			Tube Company, USA Courtesy of Queensland Museum HARRIET BRIMS Camera case body, date unknown Manufacturer unknown John Oxley Library, SLQ Accession 31054 Camera lens used by Harriet Brims, date unknown Taylor Taylor & Hobson, UK John Oxley Library,
+			SLQ Accession 31054 Camera lens, date unknown Perken Son & Rayment, UK John Oxley Library, SLQ Accession 31054 Camera made from imported parts, including Perken Son & Rayment mahogany case, C. P. Goerz lens, and a Thornton Pickard timed and instantaneous
+			shutter, date unknown Assembled by Donald and Harriet Brims John Oxley Library, SLQ Accession 31054 Glass plate negative holders, dates unknown Manufacturers unknown John Oxley Library, SLQ Accession 31054 Harriet Brims’ Britannia Studio at Ingham,
+			ca. 1902–1903 Harriet Brims John Oxley Library, SLQ Accession GL-59 Negative no. 147024 Waterhouse camera stops, dates unknown T. H. Dallmeyer John Oxley Library, SLQ Accession 31054 Hand-coloured portraits of Harriet and Donald Brims, date unknown
+			Harriet Brims On loan from John Brims Private Collection, Brisbane, Qld Harriet Brims’ compact glass plate negative camera and its case, date unknown Donald Brims On loan from John Brims Private Collection, Brisbane, Qld Harriet Brims’ photographic
+			studio, inland from Ingham, date unknown Harriet Brims John Oxley Library, SLQ Accession GL-59 Negative no. 146984 Harriet Brims on location in the Queensland bush, ca. 1880–1890 Harriet Brims John Oxley Library, SLQ Accession GL-59 Negative no. 147022
+			Self-portrait, ca. 1890 Harriet Brims John Oxley Library, SLQ Accession GL-59 Negative no. 146953 Various photography instruments and tools owned and used by Harriet Brims, dates unknown Manufacturers unknown John Oxley Library, SLQ Accession 31054
+			GLASS PLATE NEGATIVES: ROTATION 1 Men sitting atop a horse-drawn wagon, Mareeba, ca. 1904 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0203 D. G. Brims at his Ingham sawmill, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0009
+			Sunday School group on an outing, North Queensland, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0245 Studio portrait of a girl in a striped dress, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0151 Aboriginal
+			group, North Queensland, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0255 GLASS PLATE NEGATIVES: ROTATION 2 Group atop a horse-drawn cart, North Queensland, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0569
+			Harriet Brims (at left) with a young woman, possibly her daughter, Ingham, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0339 Young boy and a goat beside a creek in North Queensland, ca. 1900 Harriet Brims John Oxley Library,
+			SLQ Image no. 31054-0001-0247 Studio portrait of a young girl in a costume, North Queensland, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0265 Portrait of two men, North Queensland, ca. 1900 Harriet Brims John Oxley Library,
+			SLQ Image no. 31054-0001-0262 GLASS PLATE NEGATIVES: ROTATION 3 Marcus and William Brims standing beside a church they built in Mareeba, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0002 Outdoor group portrait of a band, North
+			Queensland, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0175 Boating on the Seymour River, near Ingham, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0001 Studio portrait of a young girl in Japanese dress,
+			North Queensland, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0466 Group portrait, North Queensland, ca. 1900 Harriet Brims John Oxley Library, SLQ Image no. 31054-0001-0150 A. J. HUNTING Blueprint for ‘A Remarkable Invention’:
+			portable refrigeration for standard military water bottle, 1941 A. J. Hunting John Oxley Library Accession 30913/2 Blueprint for Koolit Crystal portable refrigeration for cooling cream on dairy (without machinery), ca. 1942–1945 A. J. Hunting John
+			Oxley Library Accession 30913/2 Blueprint for portable flame thrower, ‘At Close Quarters Better Than Machine-Guns’, ca. 1940s A. J. Hunting John Oxley Library Accession 30913/24 Pineapple de-coredicator, ca. 1944 A. J. Hunting John Oxley Library Accession
+			30913/2 Davies Park Speedway photomontage, ca. 1931 Sydney Riley Studio John Oxley Library, SLQ Accession 5981 Koolit Crystals order form on company letterhead, ca. 1940s A. J. Hunting (Koolit Crystals Pty Ltd) John Oxley Library, SLQ Accession 30913/2
+			Koolit Crystals advertising pamphlet, ca. 1942–1945 A. J. Hunting (Koolit Crystals Pty Ltd) John Oxley Library, SLQ Accession 30913/2 Koolit Crystal No.2 — The ‘Wonder’ Refridgerating Crystals, ca. 1942–1945 A. J. Hunting John Oxley Library, SLQ Accession
+			30913/2 Cream can insulator diagram, ca. 1942–1945 A. J. Hunting John Oxley Library, SLQ Accession 30913/2 Instructions for using the Koolit Crystals system, ca. 1942­–1945 A. J. Hunting John Oxley Library, SLQ Accession 30913/2 A. J. Hunting with
+			flying cap and goggles, date unknown Photographer unknown John Oxley Library, SLQ Accession 30913 Speedway Davies Park Programme and News, 10 October 1931, 1931 Speedways Ltd John Oxley Library, SLQ Accession 30876 Town Topics incorporating Speedway
+			News, published Friday 30 March 1928 Olympia Motor Speedways Brisbane (editor: Norman Pritchard) On loan from Vintage Speedcar Association (Qld) Collection, Brisbane Qld Letter written by A. J. Hunting to his family regarding his life, 1943 A. J. Hunting
+			John Oxley Library, SLQ Accession 30913/2 Windsor Golf Practice Battery letter, 1939 A. J. Hunting John Oxley Library, SLQ Accession 30913/1 George Roberts, golf caddie, wearing wire cage and shield, appeared in The Telegraph newspaper, 11 October
+			1939 A. J. Hunting John Oxley Library, SLQ Accession 30913/1 New tee built at the Windsor Golf Batter, in preparation for play under the flood lights, appeared in The Courier-Mail newspaper, 11 October 1939 Photographer unknown John Oxley Library,
+			SLQ Accession 30913/1 Twenty giant reflectors used for night golf, appeared in The Courier-Mail newspaper, 11 October 1939 Photographer unknown John Oxley Library, SLQ Accession 30913/1 Windsor Golf Batter and six-hole golf course map, ca. 1930s A.
+			J. Hunting John Oxley Library, SLQ Accession 30913/1 Advertisement for the opening of the Windsor Golf Practice Battery, 1939 A. J. Hunting John Oxley Library, SLQ Accession 30913/1 Twenty men on motorcycles, Davies Park Speedway, ca. 1927 Photographer
+			unknown John Oxley Library, SLQ Accession 30876 A. J. Hunting: The Man Who Commercialised Speedway in Australia, 2017 Digital story 7 mins: 18 secs John Oxley Library, SLQ Accession 31036 Golden winged helmet, 1928 Manufacturer unknown On loan from
+			the Indian Motorcycle Museum of Australia, Brisbane Qld AJS ‘Special Racing’ GR7 Big Port motorcycle, 1926 P & R Williams On loan from private collection, Scarborough Qld NEWSPAPER ADVERTISEMENTS FEATURING IN A PROJECTION Advertisement for Speedway
+			at Davies Park (The Golden Helmet), appeared in The Telegraph newspaper, 11 November 1927, p.12 Advertisement for Speedway at Davies Park (The Circle of Thrills), appeared in The Telegraph newspaper, 18 November 1927, p.10 Advertisement for Speedway
+			at Davies Park (Billy Lamont in Thrilling Action), appeared in The Telegraph newspaper, 22 November 1927, p.13 Advertisement for Speedway at Davies Park (Gladiators, Caesers All!), appeared in The Telegraph newspaper, 20 January 1928, p.12 Advertisement
+			for Speedway at Davies Park (To-night!), appeared in The Brisbane Courier newspaper, 20 August 1927, p.5 Advertisement for Speedway at Davies Park (Don’t Swelter ‘neath the Rays of ‘Sol’), appeared in The Telegraph newspaper, 25 January 1928, p.15
+			Advertisement for Speedway at Davies Park (To Wish ‘Em Bon Voyage), appeared in The Telegraph newspaper, 23 March 1928, p.12 Advertisement for Speedway at Davies Park (Over 50,000 People Have Been Thrilled), appeared in The Brisbane Courier newspaper,
+			24 September 1927, p.5 Advertisement for Speedway at Davies Park (The Silver Sash), appeared in The Daily Standard newspaper, 25 November 1927, p.9 RAM CHANDRA Ram Chandra, 1940s Fred Lang Ramsamy Family Collection Ram Chandra with a ‘lively looking’
+			taipan, 1960s Photographer unknown Ramsamy Family Collection Snake expert Ram Chandra, 1974 Alex Trotter John Oxley Library, SLQ Accession D6-11-85 ‘Ram Chandra the Taipan man’ music single by Lyall Sutcliffe and The Wagon Wheels, 1974 Capricorn Records
+			On loan from Mackay Regional Council Libraries, Heritage Collection, Mackay Qld Ram: The Man, The Legend — A Biography, 1999 Nan Rogers State Library of Queensland Record no. 21108641010002061 Survey of the taipan snake: Snake bite symptoms and treatment
+			of Australian deadly snakes, date unknown Ram Chandra State Library of Queensland Record no. 21131984750002061 Traveller Brown: The Story of Ram Chandra and The Taipan, 1988 Tasman Beattie and Nan Rogers State Library of Queensland Record no. 21123945840002061
+			Trafalgar snake and spider outfit and instruction sheet, ca. 1960s Trafalgar Trading Company On loan from The Marks Hirschfeld Museum of Medical History, the Faculty of Medicine, University of Queensland, Brisbane Qld Wooden snake bite kit, date unknown
+			Manufacturer unknown On loan from The Marks Hirschfeld Museum of Medical History, the Faculty of Medicine, University of Queensland, Brisbane Qld Two specimens of coastal taipans, in jars, dates unknown Collector unknown Courtesy of Queensland Museum
+			Dr Chase’s snakebite cure, date unknown Ridgway, London UK On loan from The Marks Hirschfeld Museum of Medical History, the Faculty of Medicine, University of Queensland, Brisbane Qld Taipan Survey Unit, 1950s Photographer unknown Ramsamy Family Collection
+			This Is Your Life, 1979 Bill Lovelock, Executive Producer 6 mins: 46 secs Courtesy of Damien Lovelock and National Film & Sound Archive</p>
+	</main>
+</body>
+
+</html>
