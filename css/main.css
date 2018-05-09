@@ -58,10 +58,11 @@
  /*** GLOBAL ***/
 
  body {
-     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+     font-family: Helvetica, Arial, sans-serif;
      margin: 0;
      padding: 0;
      font-size: 20px;
+     font-weight: 400;
      background: #3272a2;
  }
 
@@ -206,44 +207,24 @@
      padding: .8rem .8rem .2rem .8rem;
  }
 
- /*** FOOTER ***/
+ /* Mobile */
 
- footer {
-     margin: 0;
-     padding: 2rem;
-     background-color: hsl(0, 0%, 0%);
+ @media screen and (max-width: 768px) {
+     footer .lower-links {
+         padding-left: 0;
+         flex-direction: row;
+         flex-flow: wrap;
+     }
  }
 
- footer .lockedLogo {
-     display: inline-flex;
+ /* Tablet & Desktop */
+
+ @media screen and (min-width: 768px) {
+     footer .lower-links {
+         flex-direction: row;
+         flex-flow: wrap;
+     }
  }
-
- footer .LockedLogo img {
-     margin: .2rem;
-     height: 1rem;
- }
-
-
- footer ol {
-     padding: 0;
-     list-style-position: inside;
- }
-
- footer li {
-     padding: 0;
-     margin: .2rem;
- }
-
- /*
-
- dl {
-     display: inline-block;
-     margin: 0;
- }
-
- dd {
-     margin: 0;
- } */
 
  #contentOrigins {
      color: white;
@@ -511,11 +492,85 @@
          max-width: 50%;
      }
 
-     footer {
-         clear: both;
-     }
-
  }
+
+
+ /* SLQ Standard footer for microsites */
+
+ /*** FOOTER ***/
+
+ footer {
+     display: flex;
+     align-content: center;
+     justify-content: center;
+     flex-flow: wrap;
+     padding-top: .8rem;
+     padding-bottom: 2rem;
+     background: hsla(0, 0%, 0%, .8);
+ }
+
+ footer #logos {
+     display: inline-flex;
+     justify-content: left;
+     align-content: flex-start;
+ }
+
+ footer #logos a {
+     display: flex;
+     align-items: flex-start;
+     margin: .5rem;
+     max-width: 150px;
+ }
+
+ footer #logos img {
+     height: 100%;
+ }
+
+ footer a {
+     color: white;
+     text-decoration: none;
+     font-size: 1rem;
+ }
+
+ footer em {
+     color: white;
+ }
+
+ footer ul {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     list-style: none;
+ }
+
+ footer ul li {
+     display: inline-flex;
+     padding-top: .4rem;
+     padding-left: .6rem;
+     padding-right: .6rem;
+     padding-bottom: .4rem;
+ }
+
+ /* Mobile */
+
+ @media screen and (max-width: 768px) {
+     footer ul {
+         padding-left: 0;
+         flex-direction: row;
+         flex-flow: wrap;
+     }
+ }
+
+ /* Tablet & Desktop */
+
+ @media screen and (min-width: 768px) {
+     footer ul {
+         flex-direction: row;
+         flex-flow: wrap;
+     }
+ }
+
 
  /*** TEMP LAYOUT COLOURS ***/
 
